@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "title": "carrot",
+        "imageSrc": "assets/product-7.jpg",
+        "price": "7.86",
+        "discount": "10%"
+    },
+    {
+        "id": 2,
+        "title": "bell pepper",
+        "imageSrc": "assets/product-1.jpg",
+        "price": "5.90"
+    },
+    {
+        "id": 3,
+        "title": "strawberry",
+        "imageSrc": "assets/product-2.jpg",
+        "price": "12.50",
+        "discount": "10%"
+    },
+    {
+        "id": 4,
+        "title": "green beans",
+        "imageSrc": "assets/product-3.jpg",
+        "price": "9.36"
+    },
+    {
+        "id": 5,
+        "title": "cabbage",
+        "imageSrc": "assets/product-4.jpg",
+        "price": "6.88",
+        "discount": "10%"
+    },
+    {
+        "id": 6,
+        "title": "tomatoe",
+        "imageSrc": "assets/product-5.jpg",
+        "price": "10.99"
+    },
+    {
+        "id": 7,
+        "title": "brocolli",
+        "imageSrc": "assets/product-6.jpg",
+        "price": "19.99"
+   },
+    {
+        "id": 8,
+        "title": "onion",
+        "imageSrc": "assets/product-9.jpg",
+        "price": "14.50",
+        "discount": "10%"
+    },
+    {
+        "id": 9,
+        "title": "apple",
+        "imageSrc": "assets/product-10.jpg",
+        "price": "24.80"
+    },
+    {
+        "id": 10,
+        "title": "carlic",
+        "imageSrc": "assets/product-11.jpg",
+        "price": "9.00",
+        "discount": "10%"
+    },
+    {
+        "id": 11,
+        "title": "chilli",
+        "imageSrc": "assets/product-12.jpg",
+        "price": "6.99"
+    }
+]

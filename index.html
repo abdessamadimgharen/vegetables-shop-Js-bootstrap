@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Source for Fresh Produce Online">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/fo-3.avif">
+    <title>The Green Grocer: Your Source for Fresh Produce Online</title>
+    <!-- Google Font "Quicksand" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+          <a href="index.html" class="navbar-brand fs-1 rounded-circle">
+            <span class="fw-bold mainColor">Green</span>Grocer
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end align-center"
+            id="main-nav"
+          >
+            <ul class="navbar-nav ul-list">
+              <li class="nav-item px-3 position-relative fit-width">
+                <a href="#home" class="nav-link fw-bolder custom-hover-effect">HOME</a>
+              </li>
+              <li class="nav-item px-3 position-relative fit-width">
+                <a href="products-page.html" class="nav-link fw-bolder custom-hover-effect">SHOP</a>
+              </li>
+              <li class="nav-item px-3 position-relative fit-width">
+                <a href="about.html" class="nav-link fw-bolder custom-hover-effect">ABOUT</a>
+              </li>
+              <li class="nav-item px-3 position-relative fit-width">
+                <a href="contactUs.html" class="nav-link fw-bolder custom-hover-effect">CONTACT</a>
+              </li>
+              <li id="shppingCart" class="nav-item px-3 me-lg-3 me-0 my-3 my-lg-0 cartIcon  d-flex justify-content-start justify-content-lg-center  position-relative d-flex">
+                <i class="bi bi-cart-check"></i>
+                <span id="badge" class="position-absolute rounded-circle text-white fw-bold f-centered mainBg d-none"></span>
+                <div class="cartItems position-absolute mx-auto p-2 rounded d-none">
+                  <div id="cartItemProducts">
+                  </div>
+                  <a href="cartPage.html" class="btn btnEffect mainBg text-white text-center w-100">view all products</a>
+                </div>
+              </li>
+              <li id="login" class="nav-item px-3 me-lg-1 me-0 mb-2 mb-md-0 position-relative d-flex align-items-center justify-content-center border border-success">
+                <i class="bi bi-person-fill"></i>
+                <a href="login.html" class="nav-link fw-bold" >LOGIN</a>
+              </li>
+
+              <li id="logout" class="nav-item px-3 me-lg-1 me-0 mb-2 mb-md-0 position-relative d-flex align-items-center justify-content-center border border-success d-none">
+                <i class="bi bi-person-fill"></i>
+                <a href="login.html" class="nav-link fw-bold" >LOGOUT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- End Navbar  -->    
+    <!-- Start Home   -->
+    <section id="home" class="section">
+        <div class="container-lg homeContent position-relative py-5">
+            <div class="row center-all justify-content-center align-items-center">
+                <div class="col-md-8 col-lg-5  text-center text-lg-start mb-sm-5 py-5">
+                  <h1>
+                    <div class="display-3"><span class="mainColor fw-bold">Farm</span> to Table:</div>
+                    <div class="display-6">Your Source for <span class="mainColor">Fresh Produce</span> </div>
+                  </h1>
+                  <p class="lead text-muted my-4">
+                    Your source for farm-fresh fruits and vegetables, conveniently delivered to your doorstep.
+                    </p>
+                  <a href="products-page.html" class="btn mainBg btn-lg text-light btnEffect">Start Exploring</a>
+                </div>
+                <div class="col-md-8 col-lg-5 mt-5 mt-md-0 ps-md-5 pb-5">
+                    <div class="home-pic"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home   -->
+    <!-- Start Services  -->
+    <section class="section secondaryBg">
+      <div class="container-lg">
+        <div class="row services-content my-5 align-items-center justify-content-center g-0">
+
+          <div class="col-md-5 col-lg-3 text-center my-3 effect-card">
+            <div class="services-icon f-centered m-auto rounded-circle">
+              <i class="fa-solid fa-truck-fast fs-1 rounded-circle text-white"></i>
+            </div>
+            <div class="info text-uppercase mt-4">
+              <h3 class=>free shipping</h3>
+              <p class="text-muted">on order over $100</p>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 text-center my-3 effect-card">
+            <div class="services-icon f-centered m-auto rounded-circle">
+               <i class="fas fa-shield-virus fs-1 rounded-circle text-white"></i>
+            </div>  
+            <div class="info text-uppercase mt-4">
+              <h3>always fresh</h3>
+              <p class="text-muted">product well package</p>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 text-center my-3 effect-card">
+            <div class="services-icon f-centered m-auto rounded-circle">
+              <i class="fas fa-medal fs-1 rounded-circle text-white"></i>
+            </div>
+            <div class="info text-uppercase mt-4">
+              <h3>quality</h3>
+              <p class="text-muted">quality products</p>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 text-center my-3 effect-card">
+            <div class="services-icon f-centered m-auto rounded-circle">
+              <i class="fas fa-phone fs-1 rounded-circle text-white"></i>
+            </div>
+            <div class="info text-uppercase mt-4">
+              <h3>support</h3>
+              <p class="text-muted">24/7 support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services  -->
+    <!-- Start Shopping  -->
+    <section class="section my-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center g-0">
+          <div class="col-sm-8 col-md-4">
+            <img src="assets/vegTest.webp" class="w-100 shop-image">
+          </div>
+          <div class="col-sm-8 col-md-4 text-center my-4">
+            <p><span class="auto-input display-6 mainColor position-relative"></span></p>
+            <p class="my-4 lead">Sustain the well-being of every household with our farm-fresh vegetables</p>
+            <a href="products-page.html" class="btn mainBg btn-lg text-light btnEffect text-uppercase">Shop Now</a>
+          </div>
+          <div class="col-sm-8 col-md-4">
+            <img src="assets/fruits.webp" class="w-100 shop-image">
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- End Shopping  -->
+    <!-- Start Products  -->
+    <section class="section secondaryBg section-products pb-2">
+      <div class="container-lg">
+        <div class="section-head text-center">
+          <p class="mainColor fs-4 mb-0 headEffect position-relative">Features Products</p>
+          <h1 class="display-4 fw-bold">Our Products</h1>
+        </div>
+        <div id="productsDOM" class="row services-content my-5 align-items-center justify-content-center g-0 position-relative">
+        </div>
+        <div class="row services-content align-items-center mb-4 justify-content-center g-0 position-relative">
+          <a id="all-products-btn" href="products-page.html" class="btn mainBg btn-lg px-5 text-light btnEffect text-uppercase">All Products</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Products  -->
+    <!-- Start the deal  -->
+    <section class="section deal-section position-relative">
+        <div class="container-lg">
+          <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+              <div class="modal-content border-0 ">
+                <div class="modal-body px-3 py-4 rounded text-center">
+                  <p class="my-2 text-muted fw-bold">Congratulations! &#x1F389; &#x1F389; <br>You've unlocked incredible savings. We'll send the details to your email shortly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row services-content align-items-center justify-content-center g-0 position-relative">
+            <div class="col-md-8 col-lg-6 text-center text-lg-start p-5">
+              <div class="image">
+                <img src="assets/offer-sec.jpeg" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-5  text-center text-lg-start  p-5 left-time position-relative">
+              <p class="fs-5 mb-2 text-capitalize mainColor fw-bold">best price for you</p>
+              <h3 class="display-6 fw-bold text-capitalize mb-3">deal of the Month</h3>
+              <p class="fw-bolder mb-1 text-muted fs-5"> When you seize this special offer, unlock incredible savings!</p>
+              <div id="countdown" class="display-5 fw-bold my-4"></div>
+              <button id="getOffer" class="btn mainBg btn-lg text-light btnEffect px-5">Get Offer</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End the deal  -->
+    <!-- Start Testimony -->
+    <section class="section secondaryBg">
+      <div class="container-lg">
+          <div class="row text-center mb-5">
+              <p class="mainColor fs-4 mb-0 headEffect position-relative">Testimony</p>
+              <p><span class="auto_input display-6 fw-bold"></span></p>
+          </div>
+          <div class="row align-items">
+            <div class="swiper secondaryBg rounded">
+              <div class="swiper-wrapper ">
+                <div class="row services-content d-flex justify-content-center g-0 swiper-slide">
+                  <div class="col-md-8 col-lg-5 text-center ">
+                    <div class="swiper-slide p-3 text-center mb-3">
+                      <img class="rounded-circle person" src="assets/team-1.jpg">
+                      <p class="mt-3 fs-5">"The quality and freshness of the fruits and vegetables here are unmatched. I love shopping at GreenGrocer!"</p>
+                      <div>
+                        <h3 class="fw-bold">Son Goku</h3>
+                        <p class="text-muted lead">Nutritionist</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 col-lg-5 text-center ">
+                    <div class="swiper-slide p-3 text-center mb-3">
+                      <img class="rounded-circle person" src="assets/testimonial-3.jpg">
+                      <p class="mt-3 fs-5">"I've been a loyal customer for years. GreenGrocer has the best selection of organic produce in town."</p>
+                      <div>
+                        <h3 class="fw-bold">Naruto Uzumaki</h3>
+                        <p class="text-muted lead">Fitness Trainer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row services-content d-flex align-items-center justify-content-center g-0 swiper-slide">
+                  <div class="col-md-8 col-lg-5 text-center">
+                    <div class="swiper-slide p-3 text-center mb-3">
+                      <img class="rounded-circle person" src="assets/team-2.jpg">
+                      <p class="mt-3 fs-5">"The taste of the fruits I buy here reminds me of my childhood. Thanks to GreenGrocer, I can enjoy nature's goodness."</p>
+                      <div>
+                        <h3 class="fw-bold">Eren Yeager</h3>
+                        <p class="text-muted lead">Chef</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 col-lg-5 text-center">
+                    <div class="swiper-slide p-3 text-center mb-3">
+                      <img class="rounded-circle person" src="assets/testimonial-1.jpg">
+                      <p class="mt-3 fs-5">"The exceptional quality of the fruits and vegetables here is unmatched. I absolutely love shopping at GreenGrocer"</p>
+                      <div>
+                        <h3 class="fw-bold">Son Goku</h3>
+                        <p class="text-muted lead">Nutritionist</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination mt-5 mt-5"></div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- End Testimony -->
+    <!-- Start newsletter  -->
+    <section class="py-4  newsletter">
+      <div class="container-lg">
+        <div class="row my-5 align-items-center justify-content-center g-0">
+            <div class="col-md-8 col-lg-5  text-center text-lg-start mb-4 mb-lg-0">
+              <h2>Get <span class="mainColor fw-bold">25%</span> Off Your Next Purchase</h2>
+              <p class="m-0">Join our newsletter to receive an exclusive 25% discount on your upcoming order. Discover the freshest produce and enjoy savings while nourishing your body with the best nature has to offer.</p>
+            </div>
+            <div class="col-md-8 col-lg-5  text-center text-lg-start ms-lg-5">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <div class=" d-flex align-items-center justify-content-center">
+                  <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div class="send mainBg text-white rounded f-centered btnEffect">
+                    <i class="bi bi-send"></i>
+                  </div>
+                </div>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- End newsletter  -->
+    <!-- Start Footer  -->.
+    <section class="section  secondaryBg footer">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-8 col-lg-4 my-3 text-center text">
+            <h2 class="navbar-brand fs-1 rounded-circle m-0 mb-2">
+              <span class="fw-bold mainColor">Green</span>Grocer
+            </h2>
+            <p class="text-muted"> 
+              Copyright © 2023 All rights reserved | This template is made with 
+              <i class="fa fa-heart-o"></i>
+              by <span class="mainColor">Abdessamad</span> & Re-distributed by Platform
+            </p>
+          </div> 
+
+          <div class="col-md-8 col-lg-3 my-3 mx-lg-5 text-center text">
+              <span class="fw-bold fs-4">Menu</span>
+              <ul class="mt-3 menuList m-0 p-0">
+                <li class="mb-2"><a class="text-muted text-decoration-none" href="index.html">Home</a></li>
+                <li class="mb-2"><a class="text-muted text-decoration-none" href="contactUs.html">Contact</a></li>
+                <li class="mb-2"><a class="text-muted text-decoration-none" href="cartPage.html">Cart</a></li>
+                <li><a class="text-muted  text-decoration-none" href="checkout.html">Checkout</a></li>
+              </ul>
+          </div>
+          
+          <div class="col-md-8 col-lg-3 my-3 text-center text">
+              <span class="fw-bold fs-5">Have a Questions?</span>
+              <div class="mt-3">
+                <div class="d-flex justify-content-center ">
+                  <i class="bi bi-geo-alt pe-2"></i>
+                  <p class="text-muted">123 Street, Agadir, Maroc</p>
+                </div>
+                <div class="d-flex justify-content-center ">
+                  <i class="bi bi-telephone pe-2"></i>
+                  <p class="text-muted">+21260000000</p>
+                </div>
+              </div>
+              <div class="icons d-flex align-items-center justify-content-center">
+                <a class="f-centered mainColor text-decoration-none rounded-circle" href="#"><i class="bi bi-twitter"></i></a>
+                <a class="f-centered mainColor text-decoration-none rounded-circle ms-2" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="f-centered mainColor text-decoration-none rounded-circle mx-2" href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a class="f-centered mainColor text-decoration-none rounded-circle" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer  -->
+    <button id="scrollToTopBtn" class="mainBg btnEffect text-white rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/getProducts.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/isUserLoggedIn.js"></script>
+    <script src="js/addToCart.js"></script>
+    <script src="js/scrollToTop.js"></script>
+</body>
+</html>

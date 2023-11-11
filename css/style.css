@@ -1,0 +1,76 @@
+*{padding:0;margin:0;box-sizing: border-box;}
+body {font-family: 'Quicksand', sans-serif;}
+:root {--mainColor: #67c707; --secondaryColor: #f5f7fa;--mainTransition: 0.4s; --hoverColor: #58ab04}
+.mainColor {color: var(--mainColor);}
+.mainBg {background-color: var(--mainColor);}
+.secondaryColor{color:var(--secondaryColor)}
+.secondaryBg{background-color:var(--secondaryColor)}
+.custom-hover-effect::after {content: '';position: absolute;bottom: 5px;left: 50%;transform: translateX(-50%);width: 0;background:var(--mainColor);height: 3px;transition: 0.4s;}
+.custom-hover-effect:hover::after{width: 35px}
+.fit-width {width: fit-content !important;font-size: 15px}
+.section{padding: 70px 0; position: relative;}
+.btnEffect {border: 2px solid transparent; transition: var(--mainTransition);}
+.btnEffect:hover {background-color: #fff; color:var(--mainColor) !important; border-color: var(--mainColor);}
+#home{top: 76px; overflow: hidden;}
+#home::before {content:'';position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-image: url('../assets/section-4.jpg');opacity:0.04}
+.home-pic {width:600px;height:600px;border-radius: 50% ;background-image: url('../assets/section-4.jpg');background-size: cover;box-shadow: 0px 0px 20px #636161;}
+.f-centered {display: flex;justify-content: center;align-items: center;}
+.services-icon {width: 140px;height: 140px;transition:var(--mainTransition)}
+.services-icon i {border: 2px solid #ccc;width: 100px;height:100px;display: flex;justify-content: center;align-items: center;}
+.services-content > div:first-of-type .services-icon {background-color: #606c38;}
+.services-content > div:nth-child(2) .services-icon {background-color: #7b6d5e;}
+.services-content > div:nth-child(3) .services-icon {background-color: #52b788;}
+.services-content > div:nth-child(4) .services-icon {background-color: #bc6c25;}
+.services-content > div .services-icon:hover {background-color: var(--mainColor);transform:scale(0.95)}
+.section-products .product {box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);position:relative;}
+.section-products .product .deal{width: 60px; position:absolute;left:0;top: 0;}
+.section-products .product .image img {transition: var(--mainTransition)}
+.section-products .product:hover .image img {transform: scale(1.06) rotate(10deg);}
+.section-products .product .infos .price {transform: translateX(-1000px); transition: var(--mainTransition)}
+.section-products .product:hover .infos .price {transform: translateX(0px);}
+.section-products .product:hover .infos .price {cursor: pointer}
+.section-products #all-products-btn {width: fit-content}
+.deal-section .image {-webkit-clip-path:polygon(62% 0, 87% 50%, 62% 100%, 0% 100%, 13% 50%, 0% 0%);clip-path: polygon(62% 0, 87% 50%, 62% 100%, 0% 100%, 13% 50%, 0% 0%);}
+.deal-section::before {content:'';position:absolute; top:0;left:0;background-image: url('../assets/discount.webp');width: 100%;height:100%;opacity: 0.03}
+.swiper .swiper-pagination > span {background-color: var(--mainColor) !important;border: 2px solid white;outline: 2px solid var(--mainColor); width: 15px; height: 15px}
+.swiper .swiper-slide .person { font-size: 50px; width: 120px;height: 120px; margin: 0 auto;line-height: 115px; }
+.newsletter .send {width: 55px; height: 41.6px; font-size: 20px; cursor: pointer;margin-left: 5px;}
+.footer .menuList {list-style-type: none;}
+.footer .menuList li a {transition: var(--mainTransition);}
+.footer .menuList li a:hover {color: #000 !important; letter-spacing: 1.3px;font-weight: 500;}
+.footer .icons a{border:2px solid var(--mainColor);width: 40px; height: 40px; transition: var(--mainTransition);}
+.footer .icons a:hover{color: white; background-color: var(--mainColor);}
+.log-in-up{background-image: linear-gradient(to right,var(--mainColor) 35%, #fff 30% );height: 100vh;}
+.log-in-up-container {box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1)}
+.navbar .cartIcon i {font-size: 25px; cursor: pointer;transition:var(--mainTransition)}
+.navbar .cartIcon i:hover {color: var(--mainColor);}
+.navbar .cartIcon span {width: 25px; height: 25px; font-size: 10px; top: -5px; left: 30px}
+.navbar .cartItems {top: 60px; z-index: 10; width: 250px;background:#edeffa}
+.no-hover:focus{border-color: var(--mainColor);box-shadow: none;}
+.section-products .product  img {width: 100%;height: 100%;}
+.quantity-button {width: 35px;height: 35px;}
+.quantity-input {width: 35px;height: 35px;}
+.checkout .hover-0{background-color: #f5f7fa;resize: none;}
+.checkout .hover-0::placeholder{color:#6c757d;font-weight: bold;}
+.checkout .hover-0:focus, .cartTotal{background-color: #f5f7fa;}
+.contactUs::after {content:'';top:0;left:0;z-index:-1;background-image: url('../assets/contact_map.jpg');width:100%;height:100%;position: absolute;opacity:0.07}
+.headEffect::after, .headEffect::before {content:''; position: absolute;background:var(--mainColor);width:10px;height:10px;border-radius: 50%;top:50%; transform: translateY(-50%);}
+.headEffect::after{margin-left: 5px;} .headEffect::before{margin-left: -15px;}
+.about-i {width:120px;height:120px}
+.statement p{transition: var(--mainTransition);}
+.statement p:hover{transform: translateY(-10px);}
+.team-members .infos {bottom: 40px;transform: translateX(-1000px);width:90%;transition: var(--mainTransition);}
+.team-members .member:hover .infos{transform: translateX(0px)}
+.team-members .member:hover img{filter:blur(1.5px);}
+.effect-card {opacity: 0;transform: translateY(20px);transition: opacity 0.8s, transform 0.8s;}
+.effect-card.visible {opacity: 1;transform: translateY(0);}
+#scrollToTopBtn {position: fixed;bottom: 35px;right: 35px; display: none;width:50px;height:50px}
+.product-details::before {content:'';background-image: url('../assets/details-bg.webp');width:100%;height:100%;position: absolute;z-index:-1;opacity: 0.04;}
+/* Media Queries  */
+@media (max-width:992px) {.about .about-heading{text-align: center;font-size: 45px;position: initial;}}
+@media (max-width: 1992px) {.home-pic {width:400px;height: 400px;margin: 0 auto;}}
+@media (max-width: 676px) {.home-pic {width:300px;height: 300px;margin: 0 auto;}}
+@media (max-width: 520px) {.home-pic {width:230px;height: 230px;margin: 0 auto;}}
+@media (max-width: 960px) {.navbar .cartItems {position: absolute; top: 50px}}
+@media (max-width: 767px) {.section-products .product > td:first-child {width: 120px !important;height: 120px !important;}}
+@media (max-width: 992px){.deal-section .row > div:first-child {display: none}}

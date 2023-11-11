@@ -1,0 +1,17 @@
+.home-pic {animation: around 20s infinite alternate;}
+@keyframes around {100% {transform: rotate(360deg);}}
+.shop-image {animation: moveon 3.4s infinite alternate}
+@keyframes moveon {100% {transform: scale(0.95)}}
+.deal-section .image {animation: offer 1s infinite alternate}
+@keyframes offer {100% {transform: translateX(10px)}}
+.headEffect::after,.headEffect::before{animation: up 1s infinite alternate} 
+@keyframes up {100%{transform: translateY(-10px);}}
+.col-effect{animation:wave 0.8s infinite alternate;}
+@keyframes wave {100%{transform: translateY(-20px)}}
+.col-effect:nth-child(2){animation-delay: 0.2s;}
+.col-effect:nth-child(3){animation-delay: 0.4s;}
+.col-effect:nth-child(4){animation-delay: 0.6s;}
+#scrollToTopBtn {animation:up-down 0.8s infinite alternate}
+@keyframes up-down{50%{transform: translateY(-5px);}100%{transform: translateY(0px);}}
+
+
