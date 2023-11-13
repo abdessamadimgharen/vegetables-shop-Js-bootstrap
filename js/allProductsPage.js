@@ -33,25 +33,28 @@ function searchProduce() {
     if(searchBtn.value != '') {
         let produceResults = products.filter(product => product.title.toLowerCase().indexOf(searchBtn.value.toLowerCase().trim()) != -1)
         drawProductsUI(produceResults)
+        cardEffect()
     } else {
         drawProductsUI(products)
+        cardEffect()
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const allCards = document.querySelectorAll(".effect-card");
+document.addEventListener("DOMContentLoaded",cardEffect);
+function cardEffect() {
+  const allCards = document.querySelectorAll(".effect-card");
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        } else {
-          entry.target.classList.remove("visible");
-        }
-      });
-    }, { threshold: 0.5 });
-
-    allCards.forEach(card => {
-      observer.observe(card);
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
     });
-});
+  }, { threshold: 0.5 });
+
+  allCards.forEach(card => {
+    observer.observe(card);
+  });
+}
